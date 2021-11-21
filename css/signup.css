@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+}
+.body {
+    font-size: 17px;
+    line-height: 1.47059;
+    background-color: #fff;
+    color: #333;
+}
+
+/* 배너부분 */
+.banner {
+    box-sizing: content-box;
+    float: initial;
+    background-color: #1D1D1F;
+}
+.bannerlist {
+    margin: 0 auto;
+    max-width: 980px;
+    display: block;
+    color: #1D1D1F;
+    padding: 0 22px;
+    position: relative;
+
+}
+.content ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: auto;
+    height: 44px;
+    margin: 0 -8px;
+    font-size: 1em;
+    color: #1D1D1F;
+}
+.content ul li {
+    list-style: none;
+}
+
+.content ul li a {
+    margin: 10px 0 10px;
+    font-weight: 400;
+    color: #f5f5f7;
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: 0.8;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 배너 바로 밑 */
+.local-background {
+    position: absolute;
+    width: 100%;
+    background: #ffffffb3;
+    border-bottom: 1px solid #86868b;
+}
+
+.local-background .local-content {
+    box-sizing: content-box;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0px 22px;
+    position: relative;
+    max-width: 980px;
+    height: 52px;
+    border-bottom: 1px solid #86868b;
+}
+.local-content span {
+    font-size: 24px;
+    line-height: 2.125;
+    font-weight: 500;
+    letter-spacing: .015em;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
+}
+.local-background .local-menu {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    float: right;
+    line-height: 40px;
+    margin-top: 0px;
+    padding-top: 12px;
+}
+.local-menu .menu-tray ul li {
+    margin-left: 24px;
+    float: left;
+    list-style: none;
+}
+.menu-tray ul li span {
+    font-size: 12px;
+    color: #333333;
+}
+
+/* 본문 부분 */
+.intro-section {
+    padding-top: 30px;
+    text-align: center;
+    color: #000000;
+}
+.intro-section h1 {
+    font-size: 34px;
+    color: #111111;
+}
+
+.intro-section .intro-text {
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+}
+.intro-section .intro-link {
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+}
+
+.intro-section .intro-link a {
+    color: #0070C9;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+}
+.flow-section {
+    padding-top: 15px;
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid #e7e7e8;
+    padding: 30px 0px 20px; 
+}
+.flow-section_info {
+    color: #333333;
+    font-size: 17px;
+    margin: auto;
+    padding: 15px 0px 20px;
+    width: 80%;
+    max-width: 1200px;
+    border-bottom: 1px solid #e7e7e8;
+    padding: 30px 0px 20px;
+}
+.container_center {
+    margin: auto;
+    max-width: 460px;
+}
+.form-table {
+    display: table;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.form-cell {
+    display: table-cell;
+    vertical-align: top;
+    direction: ltr;
+}
+
+.form-table input {
+    font-size: 17px;
+    line-height: 1.23543;
+    font-weight: 400;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 225px;
+    height: 56px;
+    margin-bottom: 14px;
+    padding: 18px 16px 0px 16px;
+    color: #333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.column_large-12 {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.column_large-12 h3 {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+
+.sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.column_large-12 select{
+    width: 100%;
+    height: 3.3em;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 14px;
+    min-height: 32px;
+    color: #333;
+    background-clip: padding-box;
+    padding: 1.11765rem, 2.35294rem, 0, 0.94118rem;
+    color: #333333;
+
+}
+
+
+.form-element #birthday {
+    width: 460px;
+    height: 3.3em;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 14px;
+    margin: auto;
+    min-height: 32px;
+    color: #333;
+    background-clip: padding-box;
+    padding: 1.11765rem, 2.35294rem, 0, 0.94118rem;
+    color: #333333;
+}
+
+
+
+/* 이메일, 암호 입력 부분 */
+.flow-section {
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid #e7e7e8;
+    padding: 30px 0 20px;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 460px;
+}
+
+.column_large-12 input {
+    width: 100%;
+    height: 3.3em;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 14px;
+    padding: 1.11765rem, 2.35294rem, 0, 0.94118rem;
+    color: #888;
+    top: 18px;
+    left: 17px;
+}
+
+.column_large-12 p{
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42861;
+    font-weight: 400;
+    max-width: 460px;
+}
+
+
+
+/* 전화번호 입력 부분 */
+.flow-section .form-group select {
+    width: 460px;
+    height: 3.3em;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 14px;
+    padding: 18px 16px 0px;
+    color: #333333;
+}
+.form-group p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42861;
+    font-weight: 400;
+    color: #666;
+}
+.row_phonetype {
+    margin-top: 15px;
+    font-size: 16px;
+    display: table-row;
+}
+.row_phonetype .form-cell-label {
+    padding-right: 15px;
+    display: table-cell;
+    vertical-align: top;
+    direction: ltr;
+}
+
+.form-element {
+    margin-right: 30px;
+    position: relative;
+    z-index: inherit;
+    display: inline-block;
+}
+
+.form-element #message {
+    width: 13px;
+    height: 13px;
+    direction: ltr;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-radius: 2px;
+    appearance: auto;
+}
+
+.form-element label {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    direction: ltr;
+}
+
+/* 공지사항 및 보안코드 */
+
+.announce {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    box-sizing : border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.privacy1 {
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    box-sizing : border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+
+.form-label {
+    display: block;
+    font-size: 17px;
+    line-height: 1.2543;
+    font-weight: 400;
+    position: relative;
+    color: #333;
+    padding-left: 26px;
+    cursor: pointer;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+
+small {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.33341;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.form-element .privacy-policy {
+    margin-top: 20px;
+    display: block;
+    padding-left: 26px;
+    margin-bottom: 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 1.23543;
+    font-weight: 400;
+    position: relative;
+  
+}
+
+.privacy a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0070C9;
+    display: inline-block;
+}
+
+
+/* 아이콘 및 캡션 */
+.icon-section {
+    max-width: 465px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.33341;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+}
+.icon-section .privacy-icon {
+    margin: 10px auto;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("teamproject1/images/privacy-icon.png");
+    width: 35px;
+    height: 28px;
+}
+.icon-section img {
+    width: 35px;
+    height: 28px;
+    text-align: center;
+}
+
+.icon-section a {
+    text-decoration: none;
+    color: #0070C9;
+    cursor: pointer;
+}
+
+
+.toolbar {
+    min-height: 40px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.toolbar .button {
+    margin: auto;
+    text-align: center;
+    padding: 0 0 40px;
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: middle;
+}
+
+.toolbar button {
+    font-size: 18px;
+    line-height: 1.47059;
+    font-weight: 400;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border: 1px solid #0070C9;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding: 4px 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* 하단 배너 */
+.globalfooter {
+    color: #86868b;
+    padding: 17px 0 21px;
+    display: block;
+    box-sizing: content-box;
+    margin: 0;
+    border-top: none;
+    font-size: 1em;
+    background-color: #f5f5f7;
+}
+.globalfooter .globalmini {
+    padding-bottom: 10px;
+
+}
+
+.globalmini .footershop {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.globalmini a {
+    color: #0070C9;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.globalmini .copyright {
+    padding-top: 12px;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.copyright p {
+    margin-top: 5px;
+    margin-right: 0;
+    float: none;
+    color: #86868b;
+}
+
+.copyright .link {
+    position: relative;
+    top: -5px;
+    margin-right: 0;
+    float: none;
+    margin-top: 5px;
+}
+
+.copyright .link a {
+    border-right: 1px solid #d2d2d7;
+    margin-right: 7px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #515154;
+    font-size: 1em;
+}
