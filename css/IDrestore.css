@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.58824;
+    background-color: #fff;
+    color: #1d1d1d;
+}
+
+/* 배너부분 */
+.banner {
+    box-sizing: content-box;
+    float: initial;
+    background-color: #1D1D1F;
+}
+.bannerlist {
+    margin: 0 auto;
+    max-width: 980px;
+    display: block;
+    color: #1D1D1F;
+    padding: 0 22px;
+    position: relative;
+
+}
+.content ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: auto;
+    height: 44px;
+    margin: 0 -8px;
+    font-size: 1em;
+    color: #1D1D1F;
+}
+.content ul li {
+    list-style: none;
+}
+
+.content ul li a {
+    margin: 10px 0 10px;
+    font-weight: 400;
+    color: #f5f5f7;
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: 0.8;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 배너 바로 밑 */
+.local-background {
+
+    width: 100%;
+    background: #ffffffb3;
+}
+
+.local-background .local-content {
+    box-sizing: content-box;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0px 22px;
+    position: relative;
+    max-width: 980px;
+    height: 52px;
+    border-bottom: 1px solid #86868b;
+}
+.local-content span {
+    font-size: 24px;
+    line-height: 2.125;
+    font-weight: 500;
+    letter-spacing: .015em;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
+}
+.local-background .local-menu {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    float: right;
+    line-height: 40px;
+    margin-top: 0px;
+    padding-top: 12px;
+}
+.local-menu .menu-tray ul li {
+    margin-left: 24px;
+    float: left;
+    list-style: none;
+}
+.menu-tray ul li span {
+    font-size: 12px;
+    color: #333333;
+}
+
+/* 개인정보 입력부분 */
+
+section {
+    text-align: center;
+    padding-bottom: 50px;
+    display: block;
+    letter-spacing: 0;
+    line-height: 1.58824;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1D1D1F;
+}
+
+.app-container .content-main {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 26px;
+    width: 653px;
+    padding-top: 48px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    line-height: 1.58824;
+    position: relative;
+}
+
+.content-main .content-head {
+    margin-top: 35px;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 1.58824;
+    display: block;
+
+}
+
+.content-head p {
+    line-height: 1.21875;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .004em;
+    margin-bottom: 8px;
+    color: #1D1D1F;
+    outline: 0;
+
+}
+.content-body {
+    display: inline-block;
+    width: 360px;
+    margin-top: 26px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+
+}
+.content-body .form-table{
+    margin-bottom: 10px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+.form-textbox {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    font-style: 17px;
+    font-weight: 400;
+}
+.form-textbox input {
+    line-height: 1.35296;
+    letter-spacing: 0;
+    color: #1D1D1F;
+    border-color: #d2d2d7;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+    height: 3.29412rem;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: .82353rem;
+    padding: 1.0582rem .94118rem 0;
+    text-align: left;
+
+}
+
+.iforgot-nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.iforgot-nav .button-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.button-group button {
+    margin: 0;
+    border: 0;
+    box-sizing: content-box;
+    overflow: visible;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.17648;
+    padding: 8px 16px;
+    letter-spacing: 0;
+    background: #0071e3;
+    color: #fff;
+    opacity: .32;
+    max-width: 94px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 126px;
+}
