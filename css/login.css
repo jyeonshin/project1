@@ -91,6 +91,28 @@ ul li a i {
     position: relative;
     display: block;
 }
+.error {
+    font-size: 12px;
+    font-weight: 400;
+    color: #e30000;
+    position: relative;
+    margin-top: .47059rem;
+    margin-bottom: .70588rem;
+    display: none;
+}
+
+.textbox input:focus {
+    box-shadow: 0 0 0 4px rgb(0, 125, 250 / 60%);
+    outline: none;
+}
+
+.textbox input:not(:focus) {
+    border: 1px solid #e30000;
+    background-color: #fff2f4;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e30000;
+}
 .textbox input {
     display: block;
     width: 408px;

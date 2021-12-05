@@ -147,10 +147,10 @@
 }
 .row .idms-step-wrapper {
     box-sizing: border-box;
+    margin-right: 250px;
 
 }
 .idem-step-container {
-    border-right: 1px solid #d2d2d7;
     padding-right: 40px;
     box-sizing: border-box;
     text-align: left;
@@ -191,6 +191,11 @@
     text-align: left;
     line-height: 1.35296;
     letter-spacing: 0;
+}
+input:focus {
+    border-color : #0071e3;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgb(0 125 250/ 60%);
 }
 
 .content-item {

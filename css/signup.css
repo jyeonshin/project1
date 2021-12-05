@@ -174,11 +174,38 @@
     width: 230px;
     direction: ltr;
 }
-.form-cell_1 {
-    display: table-cell;
-    vertical-align: top;
-    direction: ltr;
-    width: 250px;
+#username {
+    font-size: 17px;
+    line-height: 1.23543;
+    font-weight: 400;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: text-top;
+    width: 222px;
+    height: 56px;
+    margin-right: -10px;
+    margin-bottom: 14px;
+    padding: 18px 16px 0px 16px;
+    color: #333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+}
+.error {
+    font-size: 12px;
+    font-weight: 400;
+    color: #e30000;
+    position: relative;
+    margin-top: .47059rem;
+    margin-bottom: .70588rem;
+    display: none;
+}
+
+input:empty {
+    outline-color: #de071c;
+    background: #f2f0f0;
+    color: #de071c;
+
 }
 
 .form-cell .form-element {
@@ -192,8 +219,9 @@
     display: inline-block;
     box-sizing: border-box;
     vertical-align: text-top;
-    width: 225px;
+    width: 222px;
     height: 56px;
+    margin-left: 14px;
     margin-bottom: 14px;
     padding: 18px 16px 0px 16px;
     color: #333;
@@ -249,7 +277,17 @@
     color: #333333;
 
 }
+input:focus {
+    border-color : #0070c9;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgb(131 192 253 / 50%);
+}
 
+select:focus {
+    border-color: #0070c9;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgb(131 192 253 / 50%);
+}
 
 .form-element #birthday {
     width: 460px;
@@ -268,6 +306,23 @@
     background-clip: padding-box;
     padding: 1.11765rem, 2.35294rem, 0, 0.94118rem;
     color: #333333;
+}
+
+.form-element button {
+    color: #0070c9;
+    min-width: 0;
+    padding: 0;
+    cursor: help;
+    white-space: normal;
+    background: none;
+    border: none;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    border-radius: 0;
 }
 
 
@@ -338,28 +393,16 @@
     font-weight: 400;
     color: #666;
 }
-.row_phonetype .form-cell-label{
-    margin-top: 15px;
-    font-size: 16px;
-    display: table-row;
-}
-
-.form-cell-label div {
-    margin-top : 15px;
-    font-size: 16px;
-    width: 13px;
-    height: 13px;
-    vertical-align: text-top;
-}
-.form-cell-label div label {
-    vertical-align: -1px;
-}
-
 
 .form-element {
     margin-right: 30px;
     position: relative;
     z-index: inherit;
+    display: inline-block;
+}
+
+.form-element .form-label {
+    margin-right: 30px;
     display: inline-block;
 }
 
@@ -372,12 +415,49 @@
     padding: 0;
     border-radius: 2px;
     appearance: auto;
+    display: inline-block;
 }
 
 .form-element label {
     font-size: 16px;
     font-weight: 400;
     direction: ltr;
+    margin-left: 4px;
+}
+
+button i {
+    color: #0070c9;
+    min-width: 0;
+    padding: 0;
+    white-space: normal;
+    background: none;
+    border: none;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    border-radius: 0;
+}
+
+.form-group button {
+    color: #0070c9;
+    min-width: 0;
+    padding: 0;
+    cursor: help;
+    white-space: normal;
+    background: none;
+    border: none;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
 }
 
 /* 공지사항 및 보안코드 */
@@ -405,21 +485,6 @@
     border: 1px solid #ccc;
     background-color: #fff;
 }
-
-
-.form-label {
-    display: block;
-    font-size: 17px;
-    line-height: 1.2543;
-    font-weight: 400;
-    position: relative;
-    color: #333;
-    padding-left: 26px;
-    cursor: pointer;
-    margin-top: 13px;
-    margin-bottom: 0;
-}
-
 
 small {
     display: block;
@@ -575,6 +640,7 @@ footer {
     font-size : 1em;
     margin: 0 auto;
     max-width : 980px;
+    background-color : #f5f5f7;
 }
 .copyright p {
     max-height: 9999px;

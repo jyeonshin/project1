@@ -114,6 +114,12 @@ h1 {
     min-height: 88px;
 
 }
+.formCell input:focus {
+    border-color: #0070c9;
+    box-shadow: 0 0 0 3px rgb(131, 192, 253 / 50%);
+    outline: none;
+}
+
 .formTable {
     position: relative;
     display: table;
@@ -200,6 +206,7 @@ h1 {
     display: inline-block;
 }
 .formCell #sign-in {
+    display: none;
     bottom: 6px;
     margin: 0;
     border: 1px solid transparent;
@@ -211,6 +218,21 @@ h1 {
     font-size: 26px;
     text-decoration: none;
     background: #fff;
+}
+.formCell .slideDown {
+    margin: 0;
+    right: 10px;
+    border: 1px solid transparent;
+    position: absolute;
+    color: #86868b;
+    font-size: 26px;
+    text-decoration: none;
+    background: none;
+    padding: 7px 1px 0 2px;
+}
+
+.formCell .pwText {
+    display: none;
 }
 
 .containerFooter {

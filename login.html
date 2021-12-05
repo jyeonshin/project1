@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>insert page title</title>
+    <title>로그인 ― 보안 결제 - Apple (KR)</title>
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-<form name="login" action="post">
+<form name="login" id="frm" action="post">
     <!-- 배너 부분 -->
     <header>
         <nav class="banner">
@@ -42,8 +41,10 @@
         <div class="main_container">
             <div class="only_container">
                 <div class="textbox">
-                    <input type="text" id="idname" placeholder="Apple ID" onclick="userID()">
-                    <input type="text" id="password" placeholder="암호" onclick="userPW()">
+                    <input type="text" id="idname" placeholder="Apple ID" onclick="clickID()">
+                    <div class="error"><span><i class="fas fa-exclamation-circle"></i> Apple ID가 누락되었습니다. </span></div>
+                    <input type="password" id="password" placeholder="암호" onclick="clickPW()">
+                    <div class="error"><span><i class="fas fa-exclamation-circle"></i> 암호가 누락되었습니다. </span></div>
                 </div>
                 <p>Apple ID는 iTunes, App Store, iCloud에 로그인할 때 사용하는 이메일 주소입니다.</p>
                 <div class="submit"><button class="btn" onclick="loginBtn()">로그인</button></div>
@@ -91,5 +92,17 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        var submitAction = function(e) {
+	    e.preventDefault();
+        e.stopPropagation();
+	    
+        };
+        
+        $('form').bind('submit', submitAction);
+    </script>
 </body>
 </html>

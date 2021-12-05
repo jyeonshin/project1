@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>insert page title</title>
+    <title>Sign in - Apple (KR)</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/signin.css">
 </head>
@@ -47,11 +47,12 @@
                             <div class="signInForm">
                                 <div class="formTable">
                                     <div class="formCell">
-                                    <input type="text" id="accountName" placeholder="Apple ID">
+                                    <input type="text" id="accountName" placeholder="Apple ID" onclick="clickID()">
+                                    <button id="slideDown" class="slideDown"><i class="far fa-arrow-alt-circle-right"></i></button>
                                     </div>
                                     <div class="passwordField">
                                         <div class="formCell">
-                                            <input type="text" id="pwText" placeholder="암호">
+                                            <input type="text" id="pwText" class="pwText" placeholder="암호" onclick="clickPW()">
                                             <button id="sign-in"><i class="far fa-arrow-alt-circle-right"></i></button>
                                         </div>
                                     </div>
@@ -118,5 +119,23 @@
         </div>
     </footer>
 </form>
+
+<script src="js/signin.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    $(".slideDown").on("click", function() {
+        $(".pwText").slideDown(function() {
+            $("#sign-in").css("display", "block");
+            $(".slideDown").css("visibility", "hidden");
+        });
+        
+        return false;
+
+    });
+        
+        
+    
+</script>
 </body>
 </html>

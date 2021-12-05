@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>insert page title</title>
+    <title>Apple ID 생성 - Apple (KR)</title>
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -60,9 +60,11 @@
                 <div class="form-table">
                     <div class="form-cell">
                         <input type="text" id="username" name="lastname" placeholder="성">
+                        <div class="error"><span><i class="fas fa-exclamation-circle"></i> 성을 입력하십시오. </span></div>
                     </div>
                     <div class="form-cell_1">
-                        <input type="text" id="username" name="firstname" placeholder="이름">
+                        <input type="text" id="username" name="firstname" placeholder="이름" >
+                        <div class="error"><span><i class="fas fa-exclamation-circle"></i> 이름을 입력하십시오. </span></div>
                     </div>
                 </div>
 
@@ -89,7 +91,9 @@
                     <div class="column_large-12">
                         <div class="birthday">
                             <div class="form-element">
-                                <input type="text" id="birthday" name="birthday" placeholder="생년월일">  
+                                <input type="text" id="birthday" name="birthday" placeholder="생년월일">
+                                <div class="error"><span><i class="fas fa-exclamation-circle"></i> 유효한 생년월일을 입력하십시오. </span></div>
+                                <button type="button" data-toggle="popover" title="이 정보는 계정에서 사용할 수 있는 서비스를 정하는 데 사용됩니다." disabled><i class="fas fa-question-circle"></i></button> 
                             </div>
                         </div>
                     </div>
@@ -103,14 +107,16 @@
                 <div class="row">
                     <div class="column_large-12">
                         <input type="text" id="email" name="email" placeholder="name@example.com">
+                        <div class="error"><span><i class="fas fa-exclamation-circle"></i> Apple ID로 사용할 유효한 이메일 주소를 입력하십시오. </span></div>
                         <p>새 Apple ID로 사용될 주소입니다.</p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="column_large-12">
-                        <input type="password" id="pw" name="pw" placeholder="암호">
+                        <input type="password" id="pw" name="pw" placeholder="암호" >
                         <input type="password" id="pwcheck" name="pwcheck" placeholder="암호 확인">
+                        <div class="error"><span><i class="fas fa-exclamation-circle"></i> 입력한 암호가 일치하지 않습니다. </span></div>
                     </div>
                 </div>
             </div>
@@ -136,6 +142,8 @@
                                 <option value="france"> + 33 (프랑스)</option>
                             </select>
                             <input type="text" id="phone" name="phonenumber" placeholder="전화번호">
+                            <div class="error"><span><i class="fas fa-exclamation-circle"></i> 유효한 전화번호를 입력하십시오. </span></div>
+                                <button type="button" data-toggle="popover" title="해당 전화번호는 암호 분실 시 신원을 확인하고 암호를 재설정하는 데 사용됩니다." disabled><i class="fas fa-question-circle"></i></button> 
                                 <p>항상 사용할 수 있는 전화번호를 입력하십시오. 새 기기나 웹 브라우저에 로그인할 때 
                                     해당 전화번호를 사용하여 신원을 확인합니다. 메시지 또는 데이터 요금이 적용될 수 
                                     있습니다.
@@ -143,10 +151,11 @@
                         </div>
 
                         <div class="row_phonetype">
-                            <div class="form-cell-label">번호 확인 방법
-                                <div><input type="radio" id="message" name="type" value="textmessage"><label for="message">문자 메시지</label></div>
-                                <div><input type="radio" id="message" name="type" value="voicemail"><label for="message">음성 메시지</label></div>
-                        
+                            <div class="form-element">번호 확인 방법
+                                <div class="form-label">
+                                    <input type="radio" id="message" name="type" value="textmessage"><label for="message">문자 메시지</label>
+                                    <input type="radio" id="message" name="type" value="voicemail"><label for="message">음성 메시지</label>
+                                </div>
                             </div>
                         </div>        
                     </div>
@@ -195,7 +204,7 @@
         
         <div class="toolbar">
             <div class="button">
-                <button type="submit" class="btn"><div>계속</div></button>
+                <button type="submit" class="btn" onclick="continuebtn()"><div>계속</div></button>
             </div>
         </div>
 
@@ -218,5 +227,17 @@
         </div>
     </footer>
 </form>
+
+<script src="js/signup.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    var submitAction = function(e) {
+	    e.preventDefault();
+        e.stopPropagation();
+	    
+        };
+        
+        $("form").bind("submit", submitAction);
+</script>
 </body>
 </html>

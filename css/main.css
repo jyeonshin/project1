@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    background-color: #fff;
+    color: #1d1d1f;
+}
+
+/* 배너부분 */
+nav {
+    min-width: 320px;
+    box-sizing: content-box;
+    float: initial;
+    background-color: #1d1d1f;
+}
+
+.bannerlist {
+    margin: 0 auto;
+    max-width: 980px;
+    display: block;
+    color: #1D1D1F;
+    padding: 0 22px;
+    position: relative;
+
+}
+.content ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: auto;
+    height: 44px;
+    margin: 0 -8px;
+    font-size: 1em;
+    color: #1D1D1F;
+}
+.content ul li {
+    list-style: none;
+}
+
+.content ul li a {
+    margin: 10px 0 10px;
+    font-weight: 400;
+    color: #f5f5f7;
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: 0.8;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 배너 바로 밑 */
+.ribbon-content {
+    height: auto;
+    background-color: #e34140;
+    display: grid;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ribbon-content p {
+    padding: 12px 0;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    display: block;
+    flex-direction: row;
+}
+.ribbon-content p a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* 선물 쇼핑하기 */
+section .module-content {
+    display: grid;
+}
+
+#holiday-2021 {
+    background-color: #fbfbfb;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    color: #1d1d1f;
+}
+#holiday-2021 .unit-module-wrapper {
+    background-color: #eaf2fc;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    cursor: pointer;
+    font-weight: 400;
+}   
+
+.unit-main-wrapper {
+    margin-top: 0;
+    padding-top: 32px;
+    text-align: center;
+    display: block;
+    background-color: #eeeffe;
+}
+.unit-main-wrapper img {
+    width: 54px;
+    height: 67px;
+    background-size: 54px 67px;
+    padding: 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.unit-main-wrapper h2 {
+    letter-spacing: 0em;
+    line-height: 1.17865;
+    font-size: 48px;
+    font-weight: 600;
+    color: #1d1d1f;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-links {
+    margin-top: 14px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: .012em;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.unit-image-wrapper {
+    position: relative;
+    display: block;
+    justify-content: center;
+    overflow: visible;
+    flex-grow: 1;
+}
+.unit-image-container {
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+}
+.unit-image-animate {
+    animation: rotate 4s .125s ease-in-out forwards;
+    display: block;
+    flex-direction: column;
+}
+.unit-image-rotate {
+    margin: 0 8px;
+    transform: rotateZ(-4deg) translate3d(0, 0, 0);
+}
+.unit-image {
+    width: 359px;
+    height: 348px;
+    background-size: 359px 348px;
+    position: relative;
+}
+
+.macbook {
+    background-image: url(../images/macbookmain.png);
+    background-repeat: no-repeat;
+    background-size: 359px 348px;
+}
+.ipadmini {
+    background-image: url(../images/ipadmini.png);
+    background-repeat: no-repeat;
+    background-size: 359px 348px;
+}
+.ipadair {
+    background-image: url(../images/ipadair.png);
+    background-repeat: no-repeat;
+    background-size: 359px 348px;
+}
+
+/* iPhone 13 Pro */
+section #iphone-13-pro{
+    background-color: #fdfdfd;
+
+}
+.unit-module-wrapper a {
+    cursor: pointer;
+}
+.unit-copy-wrapper {
+    padding-top: 61px;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+.unit-copy-wrapper h2 {
+    letter-spacing: 0em;
+    line-height: 1.17865;
+    font-size: 56px;
+    font-weight: 600;
+    color: #1d1d1f;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 6px;
+    color: #1d1d1f;
+}
+.unit-image-wrapper {
+    text-align: center;
+}
+.unit-image-wrapper .main{
+    width: 1068px;
+    height: 698px;
+    background-size: 1068px 698px;
+    background-repeat: no-repeat;
+}
+
+/* iPhone 13 */
+#iphone-13 {
+    background-color: #35283c;
+}
+.unit-copy-wrapper .headline {
+    font-size: 56px;
+    font-weight: 600;
+    color: #f5f5f7;
+    text-align: center;
+    display: block;
+    background-color: #35283c;
+}
+.unit-copy-wrapper .subhead {
+    color: #fec2eb;
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 6px;
+
+}
+
+#iphone-13 .unit-copy-wrapper{
+    background-color: #35283c;
+}
+
+/* MacBook Pro, Airpods, Watch, iPad mini */
+
+#gridmodule {
+    display: grid;
+    position: relative;
+    --content-height: 580px;
+    --columns: 2;
+    --gutter-width: 12px;
+    --gutter-half-width: 6px;
+    --gutter-and-half-width: 18px;
+    --gutter-color: #fff;
+    --double-edge-border-width: 24px;
+    --edge-border-width: 12px;
+    --background-color: #fbfbfd;
+    --text-color: #1d1d1f;
+    --edge-border-width-fallback: 12px;
+}
+
+#macbook-pro {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 0px;
+    border-style: none;
+    overflow: visible;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+.module-content {
+    width: 100%;
+    background-color: #fbfbfb;
+    color: #1d1d1f;
+    columns: 2;
+    
+}
+.unit-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fbfbfb;
+}
+.unit-wrapper a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 3;
+}
+.unit-copy-wrapper {
+    padding-top: 55px;
+    margin-top: 44px;
+    position: relative;
+    flex-grow: 0;
+    z-index: 4;
+    pointer-events: none;
+    background: #fbfbfd;
+}
+.unit-copy-wrapper h4 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin-top: 53px;
+    width: 88%;
+    max-width: 430px;
+    color: #1d1d1f;
+    text-align: center;
+    display: block;
+    position: relative;
+    flex-shrink: 1;
+}
+
+.unit-copy-wrapper h5 {
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    margin-top: 4px;
+    width: 88%;
+    max-width: 430px;
+    color: #1d1d1f;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+
